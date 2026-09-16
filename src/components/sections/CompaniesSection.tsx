@@ -23,7 +23,8 @@ export function CompaniesSection() {
             {messages.companies.title}
           </h2>
           <p className="text-base sm:text-lg text-gray-300 font-normal leading-relaxed">
-            {messages.companies.subtitle}
+            Evalúa cómo resuelven problemas técnicos{" "}
+            <mark className="text-highlight">antes de contratar</mark>.
           </p>
         </div>
 

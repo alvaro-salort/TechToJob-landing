@@ -20,7 +20,8 @@ export function TalentSection() {
               {messages.talent.title}
             </h2>
             <p className="text-base sm:text-lg text-brand-grayText font-normal leading-relaxed mb-8">
-              {messages.talent.subtitle}
+              Publica tu stack y disponibilidad. Te contactan directamente{" "}
+              <mark className="text-highlight">sin filtros ATS</mark>.
             </p>
 
             {/* 3 Pillars / Guarantees */}
@@ -35,7 +36,15 @@ export function TalentSection() {
                       {feature.title}
                     </h3>
                     <p className="text-sm text-brand-grayText leading-relaxed">
-                      {feature.description}
+                      {i === 0 ? (
+                        <>
+                          Ningún software ciego va a{" "}
+                          <mark className="text-highlight">descartar tu perfil</mark> antes de que
+                          una persona real lo revise con criterio.
+                        </>
+                      ) : (
+                        feature.description
+                      )}
                     </p>
                   </div>
                 </div>

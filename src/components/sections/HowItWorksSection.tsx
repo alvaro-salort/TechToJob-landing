@@ -26,7 +26,8 @@ export function HowItWorksSection() {
             {messages.howItWorks.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-grayText font-normal leading-relaxed">
-            {messages.howItWorks.subtitle}
+            De entrar al Discord a tu{" "}
+            <mark className="text-highlight">primera oportunidad real</mark>.
           </p>
         </div>
 

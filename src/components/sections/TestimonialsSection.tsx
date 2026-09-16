@@ -13,7 +13,8 @@ export function TestimonialsSection() {
             {messages.testimonials.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-grayText font-normal leading-relaxed">
-            {messages.testimonials.subtitle}
+            Gente real del sector que ya está dentro y{" "}
+            <mark className="text-highlight">construyendo en comunidad</mark>.
           </p>
         </div>
 
