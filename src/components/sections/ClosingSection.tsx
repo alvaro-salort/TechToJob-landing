@@ -20,7 +20,8 @@ export function ClosingSection() {
         </h2>
 
         <p className="text-base sm:text-xl text-gray-300 font-normal max-w-2xl mx-auto mb-10 leading-relaxed">
-          {messages.closing.subtitle}
+          La comunidad ya está activa.{" "}
+          <mark className="text-highlight">Entra y preséntate</mark>.
         </p>
 
         <div className="inline-block">

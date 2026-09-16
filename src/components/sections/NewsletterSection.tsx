@@ -24,7 +24,8 @@ export function NewsletterSection() {
             {messages.newsletter.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-grayText font-normal max-w-2xl mx-auto mb-8 leading-relaxed">
-            {messages.newsletter.subtitle}
+            Las ofertas de la semana y torneos,{" "}
+            <mark className="text-highlight">directo a tu correo</mark>. Cero spam.
           </p>
 
           {submitted ? (

@@ -34,7 +34,8 @@ export function NetworkingSection() {
             {messages.networking.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-grayText font-normal leading-relaxed">
-            {messages.networking.subtitle}
+            Las mejores ofertas y oportunidades{" "}
+            <mark className="text-highlight">no se publican, te enteras</mark> dentro de la comunidad.
           </p>
         </div>
 

@@ -13,7 +13,8 @@ export function NewsSection() {
             {messages.news.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-grayText font-normal leading-relaxed">
-            {messages.news.subtitle}
+            Novedades del proyecto, torneos y lo que pasa en el{" "}
+            <mark className="text-highlight">ecosistema tech</mark>.
           </p>
         </div>
 

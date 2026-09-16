@@ -21,7 +21,8 @@ export function TournamentsSection() {
             {messages.tournaments.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-grayText font-normal leading-relaxed">
-            {messages.tournaments.subtitle}
+            Retos abiertos con código real donde{" "}
+            <mark className="text-highlight">demuestras lo que sabes hacer</mark>.
           </p>
         </div>
 
