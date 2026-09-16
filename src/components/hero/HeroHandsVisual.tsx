@@ -72,28 +72,6 @@ export function HeroHandsVisual({
         </>
       )}
 
-      {/* Center Ethereal Cyan Radial Aura Glow right behind fingertips & CTA button */}
-      <div
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-72 sm:w-96 md:w-[460px] h-44 sm:h-60 md:h-72 rounded-full pointer-events-none animate-glow-pulse z-10"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(132, 192, 191, 0.55) 0%, rgba(132, 192, 191, 0.22) 40%, rgba(132, 192, 191, 0) 75%)",
-          filter: "blur(32px)",
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Intense Core Cyan Ambient Glow */}
-      <div
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-36 sm:w-52 h-24 sm:h-32 rounded-full pointer-events-none opacity-90 z-10"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(132, 192, 191, 0.8) 0%, rgba(132, 192, 191, 0) 70%)",
-          filter: "blur(14px)",
-        }}
-        aria-hidden="true"
-      />
-
       {/* Center Interactive CTA Hub */}
       <div className="relative z-30 flex items-center justify-center px-4">
         {children}
