@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "title": "TechToJob | Comunidad de talento tech",
+    "description": "Comunidad donde desarrolladores y empresas tech conectan antes de que exista una vacante. Sin filtros ciegos, con proyectos reales y trato directo.",
+    "ogTitle": "TechToJob · Donde el talento tech se demuestra trabajando",
+    "ogDescription": "Únete a la comunidad de desarrolladores y empresas tech en español. Participa en torneos, publica tu perfil y conecta sin filtros automáticos.",
+    "url": "https://techtojob.com",
+    "locale": "es_ES"
+  },
+  "nav": {
+    "brand": "TechToJob",
+    "links": {
+      "howItWorks": "Cómo funciona",
+      "talent": "Para talento",
+      "companies": "Para empresas",
+      "tournaments": "Torneos",
+      "networking": "Comunidad",
+      "news": "Noticias"
+    },
+    "cta": "Entrar a Discord"
+  },
+  "hero": {
+    "badge": "",
+    "title": "Haz que las empresas te encuentren",
+    "subtitle": "Construye, colabora y hazte visible.",
+    "cta": "Unirse a Discord",
+    "reassurance": "Acceso libre para candidatos · Trato directo"
+  },
+  "howItWorks": {
+    "badge": "",
+    "title": "Cómo funciona",
+    "subtitle": "De entrar al Discord a tu primera oportunidad real.",
+    "steps": [
+      {
+        "title": "Entras al Discord",
+        "description": "Te presentas en la comunidad, eliges tus áreas de interés y accedes a los canales donde ya se debate y se programa cada día."
+      },
+      {
+        "title": "Construyes y colaboras",
+        "description": "Muestras lo que estás creando, participas en torneos abiertos y resuelves dudas técnicas junto a otros compañeros."
+      },
+      {
+        "title": "Te ven en acción",
+        "description": "Reclutadores y responsables técnicos están en los mismos canales. Ven cómo piensas, cómo resuelves problemas y tu constancia."
+      },
+      {
+        "title": "Surge el contacto directo",
+        "description": "Te escriben directamente sin pasar por filtros ATS que te descartan por no tener años de experiencia inflados."
+      }
+    ]
+  },
+  "talent": {
+    "badge": "",
+    "title": "Para talento",
+    "subtitle": "Publica tu stack y disponibilidad. Te contactan directamente sin filtros ATS.",
+    "features": [
+      {
+        "title": "Cero filtros automáticos",
+        "description": "Ningún software ciego va a descartar tu perfil antes de que una persona real lo revise con criterio."
+      },
+      {
+        "title": "Espacio para juniors y seniors",
+        "description": "No te pediremos cinco años de experiencia para un puesto de entrada. Lo que cuenta es lo que sabes hacer hoy."
+      },
+      {
+        "title": "100% libre para candidatos",
+        "description": "Crear tu ficha, participar en los retos y hablar con empresas no te costará nunca ni un solo céntimo."
+      }
+    ],
+    "cardPreview": {
+      "name": "Alex R.",
+      "role": "Frontend Developer",
+      "level": "Junior+",
+      "availability": "Disponible inmediatamente",
+      "stack": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind"
+      ],
+      "bio": "Construyo interfaces rápidas y accesibles. Ganador del Torneo #2 de TechToJob.",
+      "verified": "Miembro verificado en Discord"
+    }
+  },
+  "companies": {
+    "badge": "",
+    "title": "Para empresas",
+    "subtitle": "Evalúa cómo resuelven problemas técnicos antes de contratar.",
+    "features": [
+      {
+        "title": "Observa el código y el trato",
+        "description": "Consulta repositorios reales, la comunicación en equipo y la actitud ante los bloqueos."
+      },
+      {
+        "title": "Publica lo que necesitas de verdad",
+        "description": "Comparte tus búsquedas directamente con la comunidad y recibe respuestas de personas motivadas."
+      },
+      {
+        "title": "Contacto directo y sin intermediarios",
+        "description": "Escribe a los desarrolladores por privado en Discord o concierta una llamada técnica sin rodeos."
+      }
+    ]
+  },
+  "tournaments": {
+    "badge": "",
+    "title": "Torneos",
+    "subtitle": "Retos reales con código que va a producción y se luce en tu portfolio.",
+    "features": [
+      {
+        "title": "Proyectos reales en tu portfolio",
+        "description": "Terminas con código desplegado y en uso que puedes enseñar y defender en cualquier entrevista de trabajo."
+      },
+      {
+        "title": "Criterios claros y públicos",
+        "description": "Diseño, semántica, SEO, accesibilidad y rendimiento. Sabes exactamente qué se valora y por qué."
+      },
+      {
+        "title": "Visibilidad ante la comunidad",
+        "description": "Las empresas colaboradoras siguen las entregas y contactan a los participantes destacados."
+      }
+    ],
+    "current": {
+      "tag": "Torneo activo",
+      "title": "Torneo #2: Landing Page Oficial",
+      "description": "Construcción de la web oficial de TechToJob con Next.js y Tailwind.",
+      "status": "En fase de evaluación comunitaria"
+    }
+  },
+  "networking": {
+    "badge": "",
+    "title": "Comunidad",
+    "subtitle": "Canales especializados, dudas resueltas y ofertas compartidas por miembros.",
+    "points": [
+      {
+        "title": "Canales temáticos especializados",
+        "description": "Espacios concretos para Frontend, Backend, UI/UX, Mobile y Datos donde resolver dudas en minutos."
+      },
+      {
+        "title": "Ofertas compartidas de primera mano",
+        "description": "Miembros que avisan cuando en su empresa se abre un hueco y recomiendan a compañeros del servidor."
+      },
+      {
+        "title": "Charlas y feedback de código",
+        "description": "Pide una revisión de tu repositorio o asiste a sesiones con profesionales experimentados."
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "",
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen desarrolladores y empresas que ya están dentro.",
+    "items": [
+      {
+        "name": "Lucía Morales",
+        "role": "Frontend Developer",
+        "company": "Comunidad TechToJob",
+        "text": "Entré buscando cómo mejorar mi portfolio y en dos semanas ya estaba colaborando en un proyecto conjunto con gente con mucha experiencia.",
+        "linkedIn": "https://www.linkedin.com/company/techtojob/"
+      },
+      {
+        "name": "Carlos Méndez",
+        "role": "Backend Engineer",
+        "company": "Comunidad TechToJob",
+        "text": "Aquí no eres un número que espera respuesta. Hablas directamente con personas que programan y te dan feedback honesto de tu código.",
+        "linkedIn": "https://www.linkedin.com/company/techtojob/"
+      },
+      {
+        "name": "Elena Soto",
+        "role": "Product Designer & UI",
+        "company": "Comunidad TechToJob",
+        "text": "Los torneos son la mejor forma de tener proyectos vivos que enseñar en entrevistas. Te ayuda a destacar frente al típico proyecto clon.",
+        "linkedIn": "https://www.linkedin.com/company/techtojob/"
+      },
+      {
+        "name": "David Alarcón",
+        "role": "Fullstack Developer",
+        "company": "Comunidad TechToJob",
+        "text": "Me enteré de una vacante en mi empresa actual porque un compañero del servidor la comentó por el canal de ofertas un día antes.",
+        "linkedIn": "https://www.linkedin.com/company/techtojob/"
+      },
+      {
+        "name": "Marta Gallego",
+        "role": "Talent Partner Tech",
+        "company": "Empresa Colaboradora",
+        "text": "TechToJob nos permite ver a los profesionales actuar en equipo y ver su evolución técnica. Es infinitamente más útil que cribar 300 CVs.",
+        "linkedIn": "https://www.linkedin.com/company/techtojob/"
+      }
+    ]
+  },
+  "news": {
+    "badge": "",
+    "title": "Noticias",
+    "subtitle": "Novedades del proyecto, torneos y tendencias del sector.",
+    "items": [
+      {
+        "id": "news-1",
+        "date": "12 Sep 2026",
+        "title": "El Torneo #2 reúne a decenas de participantes para la landing oficial",
+        "excerpt": "Desarrolladores y diseñadores presentan sus propuestas para dar forma a la puerta de entrada de TechToJob con Next.js y Tailwind."
+      },
+      {
+        "id": "news-2",
+        "date": "08 Sep 2026",
+        "title": "Por qué las empresas tech están reduciendo el filtrado por ATS",
+        "excerpt": "El contexto de ver trabajar a una persona en una comunidad supera con creces el test automatizado de palabras clave."
+      },
+      {
+        "id": "news-3",
+        "date": "01 Sep 2026",
+        "title": "Nueva sección de perfiles de talento abierta para empresas colaboradoras",
+        "excerpt": "Los miembros ya pueden vincular su stack y disponibilidad para recibir mensajes directos de responsables de contratación."
+      }
+    ]
+  },
+  "newsletter": {
+    "badge": "",
+    "title": "Newsletter",
+    "subtitle": "Un correo cada lunes con ofertas y retos. Cero spam.",
+    "placeholder": "tu@correo.com",
+    "cta": "Quiero recibir las ofertas",
+    "disclaimer": "Cero spam. Te das de baja con un solo clic en cualquier momento."
+  },
+  "closing": {
+    "badge": "",
+    "title": "¿Listo para dar el salto?",
+    "subtitle": "Entra a Discord, preséntate a la comunidad y empieza a conectar hoy.",
+    "cta": "Entrar a la comunidad en Discord"
+  },
+  "footer": {
+    "description": "Comunidad donde desarrolladores y empresas tech conectan a través de proyectos reales, torneos y trato directo.",
+    "columns": {
+      "talent": {
+        "title": "Talento",
+        "links": [
+          {
+            "label": "Cómo funciona",
+            "href": "#como-funciona"
+          },
+          {
+            "label": "Para talento",
+            "href": "#talento"
+          },
+          {
+            "label": "Torneos abiertos",
+            "href": "#torneos"
+          },
+          {
+            "label": "Canal de Discord",
+            "href": "https://discord.gg/h9FFgKdkRd"
+          }
+        ]
+      },
+      "companies": {
+        "title": "Empresas",
+        "links": [
+          {
+            "label": "Para empresas",
+            "href": "#empresas"
+          },
+          {
+            "label": "Patrocinar torneos",
+            "href": "https://discord.gg/h9FFgKdkRd"
+          },
+          {
+            "label": "Contacto directo",
+            "href": "https://www.linkedin.com/company/techtojob/"
+          }
+        ]
+      },
+      "community": {
+        "title": "Comunidad",
+        "links": [
+          {
+            "label": "Comunidad",
+            "href": "#networking"
+          },
+          {
+            "label": "Testimonios",
+            "href": "#testimonios"
+          },
+          {
+            "label": "Noticias",
+            "href": "#noticias"
+          },
+          {
+            "label": "Servidor Discord",
+            "href": "https://discord.gg/h9FFgKdkRd"
+          }
+        ]
+      },
+      "legal": {
+        "title": "Legal",
+        "links": [
+          {
+            "label": "Aviso Legal",
+            "href": "#"
+          },
+          {
+            "label": "Política de Privacidad",
+            "href": "#"
+          },
+          {
+            "label": "Código de Conducta",
+            "href": "#"
+          }
+        ]
+      }
+    },
+    "social": {
+      "discord": "https://discord.gg/h9FFgKdkRd",
+      "linkedin": "https://www.linkedin.com/company/techtojob/",
+      "x": "https://x.com/techtojob",
+      "instagram": "https://www.instagram.com/techtojob"
+    },
+    "credits": "Landing page desarrollada para el Torneo #2 de TechToJob. Todos los derechos reservados."
+  }
+}
