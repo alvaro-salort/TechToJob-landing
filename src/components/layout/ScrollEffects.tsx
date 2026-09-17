@@ -6,13 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function ScrollEffects() {
   useEffect(() => {
-    // Developer Console Signature & Easter Egg
+    
     if (typeof window !== "undefined") {
       const w = window as unknown as { __ttj_logged__?: boolean };
       if (!w.__ttj_logged__) {
         w.__ttj_logged__ = true;
         console.log(
-          `%c TechToJob %c Landing Page %c Diseñado y desarrollado por Álvaro Salort %c\n` +
+          `%c TechToJob %c Landing Page %c Diseñado y desarrollado por Alvaro Salort :) %c\n` +
           `%cGitHub: https://github.com/alvaro-salort`,
           "background: #2f3436; color: #84c0bf; font-weight: 700; font-size: 12px; padding: 4px 8px; border-radius: 4px 0 0 4px;",
           "background: #84c0bf; color: #030507; font-weight: 700; font-size: 12px; padding: 4px 8px;",
