@@ -4,8 +4,14 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
 export function ScrollEffects() {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     console.log(
       "%c \"No se entra simplemente a la consola...\" %c\n\n" +
       "Forjado en los fuegos de Next.js y GSAP por Alvaro Salort.\n" +
