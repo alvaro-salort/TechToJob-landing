@@ -28,10 +28,7 @@ export function HeroSection() {
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center mb-6 sm:mb-10 z-20">
         {/* Primary Page Heading (Single H1) */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.12] mb-5">
-          Haz que las empresas{" "}
-          <span className="block">
-            <mark className="text-highlight">te encuentren</mark>
-          </span>
+          Haz que las empresas <span className="block">te encuentren</span>
         </h1>
 
         {/* Short Punchy Subtitle */}
