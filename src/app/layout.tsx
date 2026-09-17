@@ -13,8 +13,16 @@ const sora = Sora({
 
 const messages = getMessages();
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "") ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "") ||
+  SITE_CONFIG.url;
+
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_CONFIG.url),
+  metadataBase: new URL(siteUrl),
   title: {
     default: messages.meta.title,
     template: `%s | ${SITE_CONFIG.name}`,
@@ -37,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: SITE_CONFIG.url,
+    url: siteUrl,
     title: messages.meta.ogTitle,
     description: messages.meta.ogDescription,
     siteName: SITE_CONFIG.name,
