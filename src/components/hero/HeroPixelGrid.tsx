@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from "react";
 interface HeroPixelGridProps {
   className?: string;
   cellSize?: number;
+  direction?: "top" | "bottom";
 }
 
 interface FloatingPixel {
@@ -20,6 +21,7 @@ interface FloatingPixel {
 export function HeroPixelGrid({
   className = "",
   cellSize = 11,
+  direction = "top",
 }: HeroPixelGridProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -135,10 +137,10 @@ export function HeroPixelGrid({
       if (!canvas) return;
       const cr = canvas.getBoundingClientRect();
 
-      // Heading safe zone
-      const h1 = parentSection?.querySelector("h1");
-      if (h1) {
-        const hr = h1.getBoundingClientRect();
+      // Heading safe zone (H1 or H2)
+      const heading = parentSection?.querySelector("h1") || parentSection?.querySelector("h2");
+      if (heading) {
+        const hr = heading.getBoundingClientRect();
         headSafe = {
           left: hr.left - cr.left - 24,
           right: hr.right - cr.left + 24,
@@ -148,8 +150,9 @@ export function HeroPixelGrid({
         };
       }
 
-      // Discord button bounds
-      const btn = parentSection?.querySelector("#hero-discord-cta") as HTMLElement | null;
+      // Discord button bounds (hero or closing section)
+      const btn = (parentSection?.querySelector("#hero-discord-cta") ||
+        parentSection?.querySelector("#closing-discord-cta")) as HTMLElement | null;
       if (btn) {
         const br = btn.getBoundingClientRect();
         btnSafe = {
@@ -208,7 +211,8 @@ export function HeroPixelGrid({
     targetEl.addEventListener("pointerleave", handlePointerLeave as EventListener);
 
     // Discord button hover listeners (no rectangle, only scattered floating pixels)
-    const btnEl = parentSection?.querySelector("#hero-discord-cta") as HTMLElement | null;
+    const btnEl = (parentSection?.querySelector("#hero-discord-cta") ||
+      parentSection?.querySelector("#closing-discord-cta")) as HTMLElement | null;
     const handleBtnEnter = () => {
       isBtnHovered = true;
       updateElementsBounding();
@@ -378,7 +382,8 @@ export function HeroPixelGrid({
             (Math.sin(c * 0.38 + SEED) + Math.sin(c * 0.16 - SEED * 1.3)) * 0.22 +
             hsh(Math.floor(c / 2) + 3.3, Math.floor(r / 3)) * 0.55 +
             0.12;
-          const depth = vy + colWave * 60;
+          const effDist = direction === "bottom" ? H - vy : vy;
+          const depth = effDist + colWave * 60;
           const regThr =
             depth <= canopyEnd ? 0 : Math.min(1, (depth - canopyEnd) / fadeSpan);
 
@@ -393,8 +398,10 @@ export function HeroPixelGrid({
                 (hsh(c, r) - 0.5) * 0.14 +
                 Math.sin((c * 0.5 + r * 0.7) + tt * 1.4) * 0.04;
 
-              // Soften top row so there is never an artificial horizontal stripe
-              if (r === 0) canopyVal *= 0.65;
+              // Soften outer boundary row so there is never an artificial horizontal stripe
+              const isBoundaryRow =
+                direction === "bottom" ? r === rows - 1 : r === 0;
+              if (isBoundaryRow) canopyVal *= 0.65;
 
               if (canopyVal >= CANOPY_BANDS[0][0]) {
                 canopyActive = true;
@@ -439,7 +446,7 @@ export function HeroPixelGrid({
         btnEl.removeEventListener("mouseleave", handleBtnLeave);
       }
     };
-  }, [cellSize]);
+  }, [cellSize, direction]);
 
   return (
     <canvas
