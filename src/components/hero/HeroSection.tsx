@@ -12,7 +12,7 @@ export function HeroSection() {
 
   return (
     <section suppressHydrationWarning className="relative overflow-x-clip pt-20 sm:pt-28 pb-12 sm:pb-20 bg-[#030507] text-white">
-      {/* Interactive Pixel Grid Canvas (heroinspo replica with drip canopy & cursor reaction) */}
+      {/* Interactive Pixel Grid Canvas*/}
       <HeroPixelGrid cellSize={11} className="z-0" />
 
       {/* High-End Ambient Background Gradients & Grid */}
