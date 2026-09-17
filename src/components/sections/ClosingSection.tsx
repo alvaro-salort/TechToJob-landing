@@ -9,12 +9,30 @@ export function ClosingSection() {
 
   return (
     <section className="relative py-28 sm:py-36 bg-[#030507] text-white border-b border-white/10 overflow-hidden">
-      {/* Interactive Pixel Grid Canvas rising from bottom to top */}
-      <HeroPixelGrid direction="bottom" cellSize={11} className="z-0" />
+      {/* Top Edge Fade Vignette into solid #030507 (eliminates harsh cutoff at transition) */}
+      <div
+        className="absolute top-0 left-0 right-0 h-32 sm:h-44 pointer-events-none bg-gradient-to-b from-[#030507] via-[#030507]/90 to-transparent z-10"
+        aria-hidden="true"
+      />
 
-      {/* Subtle Ambient Grid Background */}
+      {/* Interactive Pixel Grid Canvas rising from bottom to top with smooth top fade */}
+      <HeroPixelGrid
+        direction="bottom"
+        cellSize={11}
+        className="z-0"
+        style={{
+          maskImage: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 60px, black 160px)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 60px, black 160px)",
+        }}
+      />
+
+      {/* Subtle Ambient Grid Background with matching top fade */}
       <div
         className="absolute inset-0 dark-grid-bg opacity-15 pointer-events-none z-0"
+        style={{
+          maskImage: "linear-gradient(to bottom, transparent 0%, black 140px)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 140px)",
+        }}
         aria-hidden="true"
       />
 

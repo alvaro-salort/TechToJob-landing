@@ -12,12 +12,14 @@ export function NetworkingSection() {
   const messages = getMessages();
 
   const channelTags = [
-    { name: "frontend", members: "React, Next.js, Vue" },
-    { name: "backend", members: "Node, Go, Python" },
-    { name: "ui-ux", members: "Figma, Diseño, Accesibilidad" },
-    { name: "mobile", members: "Flutter, React Native, Swift" },
-    { name: "ofertas-internas", members: "Compartidas por miembros" },
-    { name: "revision-codigo", members: "Feedback honesto y seniors" },
+    { name: "networking", members: "Conexiones, charlas y comunidad" },
+    { name: "desarrollo", members: "Frontend, backend y fullstack" },
+    { name: "datos-e-ia", members: "Data science, ML e inteligencia artificial" },
+    { name: "ciberseguridad", members: "Seguridad, ethical hacking y auditoría" },
+    { name: "producto-y-diseno", members: "UI/UX, diseño de producto y research" },
+    { name: "infra-y-devops", members: "Cloud, CI/CD, Docker y Kubernetes" },
+    { name: "portfolios", members: "Feedback de proyectos y showcase" },
+    { name: "ofertas-trabajo", members: "Oportunidades laborales directas" },
   ];
 
   const pointIcons = [

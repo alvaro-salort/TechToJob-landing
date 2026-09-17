@@ -6,6 +6,7 @@ interface HeroPixelGridProps {
   className?: string;
   cellSize?: number;
   direction?: "top" | "bottom";
+  style?: React.CSSProperties;
 }
 
 interface FloatingPixel {
@@ -22,6 +23,7 @@ export function HeroPixelGrid({
   className = "",
   cellSize = 11,
   direction = "top",
+  style,
 }: HeroPixelGridProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -451,6 +453,7 @@ export function HeroPixelGrid({
   return (
     <canvas
       ref={canvasRef}
+      style={style}
       className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
       aria-hidden="true"
     />
