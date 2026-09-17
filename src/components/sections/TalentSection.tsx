@@ -11,7 +11,7 @@ export function TalentSection() {
   const card = messages.talent.cardPreview;
 
   return (
-    <section id="talento" className="py-24 bg-white border-b border-brand-border">
+    <section id="talento" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Value Proposition & Guarantees */}

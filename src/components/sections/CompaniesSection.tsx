@@ -16,7 +16,7 @@ export function CompaniesSection() {
   ];
 
   return (
-    <section id="empresas" className="py-24 bg-[#161819] text-white border-b border-white/10 relative overflow-hidden">
+    <section id="empresas" className="py-24 bg-[#161819] text-white relative overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">

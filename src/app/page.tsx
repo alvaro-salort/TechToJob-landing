@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollEffects } from "@/components/layout/ScrollEffects";
+import { SectionTransition } from "@/components/ui/SectionTransition";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { TalentSection } from "@/components/sections/TalentSection";
@@ -23,17 +24,34 @@ export default function Home() {
         <div id="hero" suppressHydrationWarning>
           <HeroSection />
         </div>
+
+        {/* Transition: Dark Hero (#030507) -> Light How It Works (#fbfbfd) */}
+        <SectionTransition direction="dark-to-light" fromColor="#030507" toColor="#fbfbfd" />
+
         <HowItWorksSection />
         <TalentSection />
+
+        {/* Transition: Light Talent (#ffffff) -> Dark Companies (#161819) */}
+        <SectionTransition direction="light-to-dark" fromColor="#ffffff" toColor="#161819" />
+
         <CompaniesSection />
+
+        {/* Transition: Dark Companies (#161819) -> Light Tournaments (#ffffff) */}
+        <SectionTransition direction="dark-to-light" fromColor="#161819" toColor="#ffffff" />
+
         <TournamentsSection />
         <NetworkingSection />
         <TestimonialsSection />
         <NewsSection />
         <NewsletterSection />
+
+        {/* Transition: Light Newsletter (#ffffff) -> Dark Closing (#030507) */}
+        <SectionTransition direction="light-to-dark" fromColor="#ffffff" toColor="#030507" />
+
         <ClosingSection />
       </main>
       <Footer />
     </div>
   );
 }
+
