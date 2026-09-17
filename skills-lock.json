@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "ai-slop-cleaner": {
+      "source": "Jurel89/copilot-omni",
+      "sourceType": "github",
+      "skillPath": "skills/ai-slop-cleaner/SKILL.md",
+      "computedHash": "d6c8be8973bd0713da85eb4d2acea00ed36a1951971e310aed1dfddbdcfd30b0"
+    }
+  }
+}
