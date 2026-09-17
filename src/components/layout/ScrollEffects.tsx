@@ -14,8 +14,9 @@ export function ScrollEffects() {
 
     console.log(
       "%c \"No se entra simplemente a la consola...\" %c\n\n" +
-      "Forjado en los fuegos de Next.js y GSAP por Alvaro Salort.\n" +
-      "Speak, friend, and enter: https://github.com/alvaro-salort\n",
+      "Forjado en los fuegos de Next.js por Alvaro Salort.\n" +
+      "Speak, friend, and enter: https://github.com/alvaro-salort\n" +
+      "Portfolio: https://alvaro-salort.dev/\n",
       "background: #2f3436; color: #84c0bf; font-weight: 700; font-size: 12px; padding: 4px 8px; border-radius: 4px;",
       "color: #94a3b8; font-family: monospace; font-size: 11px; line-height: 1.6;"
     );

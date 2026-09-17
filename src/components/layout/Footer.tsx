@@ -167,7 +167,7 @@ export function Footer() {
           <p className="flex items-center gap-1">
             Diseñado y desarrollado por{" "}
             <a
-              href="https://github.com/alvaro-salort"
+              href="https://alvaro-salort.dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-brand-dark font-semibold hover:text-brand-teal transition-colors underline underline-offset-4 decoration-brand-teal/50"
