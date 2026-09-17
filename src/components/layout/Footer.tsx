@@ -161,9 +161,20 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Credits Bar - Clean without right-side redundant badge */}
-        <div className="pt-8 flex items-center justify-between text-xs text-brand-grayMuted font-medium">
+        {/* Bottom Credits Bar */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-brand-grayMuted font-medium">
           <p suppressHydrationWarning>© {new Date().getFullYear()} TechToJob · {f.credits}</p>
+          <p className="flex items-center gap-1">
+            Diseñado y desarrollado por{" "}
+            <a
+              href="https://github.com/alvaro-salort"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-dark font-semibold hover:text-brand-teal transition-colors underline underline-offset-4 decoration-brand-teal/50"
+            >
+              Alvaro Salort
+            </a>
+          </p>
         </div>
       </div>
     </footer>

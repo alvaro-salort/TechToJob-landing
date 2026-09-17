@@ -6,7 +6,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function ScrollEffects() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    // Developer Console Signature & Easter Egg
+    if (typeof window !== "undefined") {
+      const w = window as unknown as { __ttj_logged__?: boolean };
+      if (!w.__ttj_logged__) {
+        w.__ttj_logged__ = true;
+        console.log(
+          `%c TechToJob %c Landing Page %c Diseñado y desarrollado por Álvaro Salort %c\n` +
+          `%cGitHub: https://github.com/alvaro-salort`,
+          "background: #2f3436; color: #84c0bf; font-weight: 700; font-size: 12px; padding: 4px 8px; border-radius: 4px 0 0 4px;",
+          "background: #84c0bf; color: #030507; font-weight: 700; font-size: 12px; padding: 4px 8px;",
+          "background: #111827; color: #f8fafc; font-size: 11px; padding: 4px 10px; border-radius: 0 4px 4px 0;",
+          "",
+          "color: #84c0bf; font-size: 11px; padding-top: 4px; font-weight: 500;"
+        );
+      }
+    }
 
     const ctx = gsap.context(() => {
       // 1. Text Highlights animation on scroll
