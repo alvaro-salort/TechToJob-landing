@@ -163,7 +163,7 @@ export function Footer() {
 
         {/* Bottom Credits Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-brand-grayMuted font-medium">
-          <p suppressHydrationWarning>© {new Date().getFullYear()} TechToJob · {f.credits}</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} TechToJob</p>
           <p className="flex items-center gap-1">
             Diseñado y desarrollado por{" "}
             <a
