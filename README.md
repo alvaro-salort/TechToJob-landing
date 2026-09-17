@@ -34,4 +34,4 @@ Landing page oficial desarrollada para el **Torneo #2 de TechToJob** bajo la pre
 
 ---
 
-Diseñado y desarrollado por **[Álvaro Salort](https://github.com/alvaro-salort)**.
+Diseñado y desarrollado por **[Alvaro Salort](https://github.com/alvaro-salort)**.
