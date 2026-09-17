@@ -15,7 +15,7 @@ export function Footer() {
   const f = messages.footer;
 
   return (
-    <footer className="bg-white border-t border-brand-border pt-16 pb-12">
+    <footer suppressHydrationWarning className="bg-white border-t border-brand-border pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-12 border-b border-brand-border/80">
           {/* Brand Info & Socials */}
@@ -163,7 +163,7 @@ export function Footer() {
 
         {/* Bottom Credits Bar - Clean without right-side redundant badge */}
         <div className="pt-8 flex items-center justify-between text-xs text-brand-grayMuted font-medium">
-          <p>© {new Date().getFullYear()} TechToJob · {f.credits}</p>
+          <p suppressHydrationWarning>© {new Date().getFullYear()} TechToJob · {f.credits}</p>
         </div>
       </div>
     </footer>

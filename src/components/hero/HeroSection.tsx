@@ -11,7 +11,7 @@ export function HeroSection() {
   const messages = getMessages();
 
   return (
-    <section className="relative overflow-x-clip pt-20 sm:pt-28 pb-12 sm:pb-20 bg-[#030507] text-white border-b border-white/10">
+    <section suppressHydrationWarning className="relative overflow-x-clip pt-20 sm:pt-28 pb-12 sm:pb-20 bg-[#030507] text-white border-b border-white/10">
       {/* Interactive Pixel Grid Canvas (heroinspo replica with drip canopy & cursor reaction) */}
       <HeroPixelGrid cellSize={11} className="z-0" />
 

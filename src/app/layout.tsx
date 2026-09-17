@@ -92,14 +92,14 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="es" className={sora.variable}>
+    <html lang="es" className={sora.variable} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased" suppressHydrationWarning>{children}</body>
     </html>
   );
 }

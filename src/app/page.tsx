@@ -15,12 +15,12 @@ import { ClosingSection } from "@/components/sections/ClosingSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#030507] selection:bg-brand-teal selection:text-brand-dark">
+    <div className="min-h-screen flex flex-col bg-[#030507] selection:bg-brand-teal selection:text-brand-dark" suppressHydrationWarning>
       <Navbar />
       <ScrollEffects />
 
-      <main id="main-content" className="flex-1 w-full">
-        <div id="hero">
+      <main id="main-content" className="flex-1 w-full" suppressHydrationWarning>
+        <div id="hero" suppressHydrationWarning>
           <HeroSection />
         </div>
         <HowItWorksSection />
