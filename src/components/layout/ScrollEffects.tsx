@@ -6,15 +6,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function ScrollEffects() {
   useEffect(() => {
-    // Developer Console Easter Egg (El Señor de los Anillos - sin emojis)
     console.log(
-      "%c TECHTOJOB %c EL RETORNO DEL CODIGO \n\n" +
-      "%c\"No se entra simplemente a la consola de TechToJob...\"\n\n" +
+      "%c \"No se entra simplemente a la consola...\" %c\n\n" +
       "Forjado en los fuegos de Next.js y GSAP por Alvaro Salort.\n" +
-      "Un desarrollador nunca tiene errores, Frodo Bolson; solo caracteristicas que se manifiestan exactamente cuando se lo proponen.\n\n" +
-      "Di \"amigo\" y entra: https://github.com/alvaro-salort\n",
-      "background: #2f3436; color: #84c0bf; font-weight: 700; font-size: 13px; padding: 4px 8px; border-radius: 4px 0 0 4px;",
-      "background: #84c0bf; color: #030507; font-weight: 700; font-size: 13px; padding: 4px 8px; border-radius: 0 4px 4px 0;",
+      "Speak, friend, and enter: https://github.com/alvaro-salort\n",
+      "background: #2f3436; color: #84c0bf; font-weight: 700; font-size: 12px; padding: 4px 8px; border-radius: 4px;",
       "color: #94a3b8; font-family: monospace; font-size: 11px; line-height: 1.6;"
     );
 
